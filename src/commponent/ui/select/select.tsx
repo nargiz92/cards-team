@@ -23,7 +23,7 @@ export type Props = {
   className?: string
 }
 
-export const Selected: FC<Props> = ({
+export const SelectComponent: FC<Props> = ({
   options,
   placeholder,
   label,
@@ -44,7 +44,7 @@ export const Selected: FC<Props> = ({
         disabled={disabled}
         required={required}
       >
-        <Select.Trigger className={clsx(s.selectTrigger)} asChild>
+        <Select.Trigger className={clsx(s.selectTriggers)} asChild>
           <div>
             <Select.Value placeholder={placeholder} />
             <Select.Icon className={s.selectIcon}>
